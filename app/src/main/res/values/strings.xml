@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WitSoftwareChallenge</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="degree">°</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="humidity">Humidity</string>
+    <string name="temp_minimum">Temp minimum</string>
+    <string name="temp_maximum">Temp maximum</string>
+</resources>

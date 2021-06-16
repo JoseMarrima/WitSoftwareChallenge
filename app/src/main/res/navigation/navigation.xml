@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/citiesFragment">
+
+    <fragment
+        android:id="@+id/citiesFragment"
+        android:name="com.example.witsoftwarechallenge.ui.cities.CitiesFragment"
+        android:label="cities_fragment"
+        tools:layout="@layout/cities_fragment" >
+        <action
+            android:id="@+id/action_citiesFragment_to_cityFragment"
+            app:destination="@id/cityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cityFragment"
+        android:name="com.example.witsoftwarechallenge.ui.city.CityFragment"
+        android:label="city_fragment"
+        tools:layout="@layout/city_fragment" >
+        <action
+            android:id="@+id/action_cityFragment_to_citiesFragment"
+            app:destination="@id/citiesFragment" />
+        <argument
+            android:name="city"
+            app:argType="string" />
+    </fragment>
+</navigation>
